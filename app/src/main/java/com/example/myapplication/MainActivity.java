@@ -17,6 +17,14 @@ public class MainActivity extends AppCompatActivity {
         quantity = quantity + 3;
         display(quantity);
     }
+    public void two(View view) {
+        quantity = quantity + 2;
+        display(quantity);
+    }
+    public void freeThrow(View view) {
+        quantity = quantity + 1;
+        display(quantity);
+    }
     private void display(int number) {
         TextView quantityTextView = (TextView) findViewById(
                 R.id.quantity_text_view);
