@@ -38,6 +38,12 @@ public class MainActivity extends AppCompatActivity {
         quantity2 = quantity2 + 1;
         display2(quantity2);
     }
+    public void reset(View view) {
+        quantity = 0;
+        quantity2 = 0;
+        display(quantity);
+        display2(quantity2);
+    }
     private void display(int number) {
         TextView quantityTextView = (TextView) findViewById(
                 R.id.quantity_text_view);
